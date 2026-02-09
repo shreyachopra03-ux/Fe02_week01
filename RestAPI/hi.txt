@@ -1,0 +1,10 @@
+// Rest API basically API ka ek type hoti hai jiske kuch standards hote hai !
+//  rest api basically standard tareeka hai jisse server & client ke beech data exchange hota hai using HTTP methods 
+// ye server-client architecture basis pr kaam krta hai  
+//  http methods -> GET, POST, PUT, DELETE, PATCH
+
+1) GET METHOD -> server se data mangna
+2) POST METHOD -> server pr new data create krna
+3) PUT METHOD -> EXISTING DATA KO UPDATE/REPLACE KRNA
+4) PATCH METHOD -> ONLY SPECIFIED FIELD IS UPDATED & NOT EVERYTHING
+5) DELETE METHOD -> SERVER SE DATA DELETE KRNA

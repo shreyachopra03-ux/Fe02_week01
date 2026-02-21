@@ -1,61 +1,61 @@
 // +++++++++++ MAP FUNCTION +++++++++++++
 // map fn hr element pr kaam krta hai array ki or ek new array return krta hai !
 
-// const arr = [5, 1, 3, 2, 4];
+const ar = [5, 1, 3, 2, 4];
 
-// Double - [10, 2, 6, 4, 12]
+Double - [10, 2, 6, 4, 12]
 
-// Triple - [15, 3, 9, 6, 18]
+Triple - [15, 3, 9, 6, 18]
 
-// Binary - ["101", "1", "11", "10", "110"]
+Binary - ["101", "1", "11", "10", "110"]
 
-// function double(x){
-//     return x * 2;
-// }
+function double(x){
+    return x * 2;
+}
 
-// function triple(x){
-//     return x * 3;
-// }
+function triple(x){
+    return x * 3;
+}
 
-// function binary(x){
-//     return x.toString(2);
-// }
+function binary(x){
+    return x.toString(2);
+}
 
 // 1st way of mapping
-// const opp = arr.map(binary);
-// console.log(opp);
+const opp = arr.map(binary);
+console.log(opp);
 
 // 2nd way of mapping
-// const opp = arr.map(function binary(x){
-//     return x.toString(2);
-// });
-// console.log(opp)
+const oppp = arr.map(function binary(x){
+    return x.toString(2);
+});
+console.log(oppp)
 
 // 3rd way of mapping
-// const opp = arr.map((x) => x.toString(2));
-// console.log(opp)
+const oppo = arr.map((x) => x.toString(2));
+console.log(oppo)
 
-// const output = arr.map(double);
-// console.log(output);
+const output = arr.map(double);
+console.log(output);
 
-// const op = arr.map(triple);
-// console.log(op);
+const op = arr.map(triple);
+console.log(op);
 
 // +++++++++++++++ FILTER FUNCTION ++++++++++++++++++++++
 // as the name suggests, values ko filter out krta hai
 
-//  const arr = [5,1,3,2,6];
+ const array = [5,1,3,2,6];
 
 // 1sy way using fn statement
 // filter odd values
-// function isOdd(x) {
-//     return x % 2 === 1;
-// }
+function isOdd(x) {
+    return x % 2 === 1;
+}
 
 // filter even values
-// function isEven(x){
-//     return x % 2 === 0;
-// }
+function isEven(x){
+    return x % 2 === 0;
+}
 
 //  const output = arr.filter(isOdd);
 //  console.log(output);
@@ -64,12 +64,11 @@
 //  console.log(op)
 
 // 2nd way using arrow fn
-//  const odd = arr.filter((x) => x % 2 === 1);
-//  console.log(odd)
+ const odd = arr.filter((x) => x % 2 === 1);
+ console.log(odd)
 
-//  const even = arr.filter((y) => y % 2 === 0)
-//  console.log(even)
-
+ const even = arr.filter((y) => y % 2 === 0)
+ console.log(even)
 
 
 // ++++++++++++++ Reduce Function ++++++++++++
@@ -85,45 +84,45 @@
 const arr = [5,1,3,2,6];
 
 // sum or max [traditional way]
-//  function findSum(arr) {
-//     let sum = 0;
-//     for(let i = 0; i < arr.length; i++) {
-//         sum = sum + arr[i];
-//     }
-//     return sum;
-// }
-// console.log(findSum(arr));
+ function findSum(arr) {
+    let sum = 0;
+    for(let i = 0; i < arr.length; i++) {
+        sum = sum + arr[i];
+    }
+    return sum;
+}
+console.log(findSum(arr));
 
 // same above fn using reduce fn
-// const output = arr.reduce(function (acc, curr){
-//     acc = acc + curr;
-//     return acc;
-// }, 0);
-// console.log(output);
+const outputs = arr.reduce(function (acc, curr){
+    acc = acc + curr;
+    return acc;
+}, 0);
+console.log(outputs);
 
 
-// function findMax(arr) {
-//     let max = 0;
-//     for(let i =0; i < arr.length; i++) {
-//         if(arr[i] > max) {
-//             max = arr[i];
-//         }
-//     }
+function findMax(arr) {
+    let max = 0;
+    for(let i =0; i < arr.length; i++) {
+        if(arr[i] > max) {
+            max = arr[i];
+        }
+    }
 
-//     return max;
-// }
+    return max;
+}
 
-// console.log(findMax(arr));
+console.log(findMax(arr));
 
-// const op = arr.reduce(function (acc, curr) {
-//     if(curr > acc) {
-//         acc = curr;
-//      
-//     }
-//      return acc;
-// }, 0)
+const ops = arr.reduce(function (acc, curr) {
+    if(curr > acc) {
+        acc = curr;
+     
+    }
+     return acc;
+}, 0)
 
-// console.log(op);
+// console.log(ops);
 
 
 // +++++++++ practice quessss ++++++++++++

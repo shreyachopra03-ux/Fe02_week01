@@ -1,4 +1,3 @@
-
 //  what is async ?
 //  what is await?
 //  how async await works behind the scenes?
@@ -38,7 +37,6 @@ const p = new Promise((resolve , reject) => {
 handlePromise()
 
 
-
 // +++++++++++++ examples of how JS handles promises ++++++++++++
 const p1 = new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -66,7 +64,6 @@ async function handlePromise() {
 }
 
 handlePromise();
-
 
 // real example of fetch call & handling it with async / await
 // to handle errors in async/await -> try/catch is used !
